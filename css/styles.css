@@ -34,6 +34,12 @@ body {
 }
 .header-container {
     display: flex;
+
+}
+.header-border {
+    box-sizing: border-box;
+    border-bottom: 1px solid #E7E9FC;
+    width: 1440px;
 }
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -96,18 +102,20 @@ body {
 }
 /**!-------------------------HERO----------------------------!*/
 .hero {
-background-color: var(--background);
-width: 1440px;
+    background-color: var(--background);
 }
 .hero-container {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 188px;
+    display: flex;
+    box-sizing: inherit;
+    flex-direction: column;
+    padding-top: 188px;
 padding-bottom: 188px;
 gap: 48px;
+align-items: center;
+
 }
 .hero-title {
+    display: flex;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -115,22 +123,21 @@ gap: 48px;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     width: 496px;
-    height: 120px;  
 }
 .hero-btn {
+
     font-family: inherit;
     background: var(--btn-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    align-items: center;
     display: flex;
     color: var(--btn-text-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    justify-content: center; 
+    justify-content: center;
     width: 169px;
     height: 56px;
     left: 636px;
@@ -142,8 +149,6 @@ gap: 48px;
 /**!-------------------------ADVANT----------------------------!*/
 .advant-list {
     display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
     padding-top: 120px;
     padding-bottom: 120px;
     gap: 24px;
@@ -204,7 +209,7 @@ gap: 48px;
 .team-item {
     background-color: #FFFFFF; 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 .team-title {
     font-weight: 700;
@@ -235,19 +240,16 @@ border-radius: 0px 0px 4px 4px;
 }
 /**!-------------------------FOOTER----------------------------!*/
 .footer {
-    
+    background-color: var(--background);
 }
 .footer-container {
-    background-color: var(--background);
-    width: 1440px;
-
-}
-
-.footer-logo {
     display: block;
+    box-sizing: inherit;
+}
+.footer-logo {
+    display: flex;
     padding-top: 100px;
-    padding-left: 0px;
-    padding-bottom: 188;
+    margin: 0 auto;
 }
 .footer-text {
     display: flex;
@@ -256,11 +258,8 @@ border-radius: 0px 0px 4px 4px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
-    padding-bottom: 100px;
     width: 264px;
-    padding-top: 0;
-    padding-left: 0px;
-    
+    padding-bottom: 100px;
 
 }
 .footer-logo {
@@ -282,6 +281,13 @@ border-radius: 0px 0px 4px 4px;
     text-transform: uppercase;
 }
 /**!-------------------------PROJECTS----------------------------!*/
+.projects-menu {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 96px;
+    padding-bottom: 75px;
+} 
 .projects-btn {
     background: var(--background-filtr);
     cursor: pointer;
@@ -294,6 +300,16 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--btn-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 120px;
+    gap: 24px;
+    margin: 0 auto;
 }
 .projects-btn:hover, .projects-btn:focus {
     background: var(--color-hover);
