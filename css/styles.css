@@ -74,6 +74,7 @@ img {
     display: flex;
     align-items: center; 
     margin-right: 156px;
+    margin-left: auto;
 }
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -149,7 +150,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--main-title-color);
     width: 496px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -193,6 +194,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-title-color); 
+    padding-bottom: 8px;
 }
 .advant-text {
     font-weight: 400;
@@ -226,6 +228,7 @@ img {
     color: var(--second-title-color);
     margin: 0 auto;
     padding-top: 0px;
+    margin-bottom: 72px;
 }
 /**!-------------------------TEAM----------------------------!*/
 .team { 
@@ -283,6 +286,12 @@ img {
     padding-top: 100px;
     padding-bottom: 100px;    
 }
+.footer-div {
+    width: 264px;
+    
+
+
+}
 .footer-text {
     font-weight: 400;
     font-size: 16px;
@@ -290,7 +299,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--footer-text-color);
     margin-top: 16px;
-    width: 264px;
+    
 }
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -311,12 +320,16 @@ img {
     text-transform: uppercase;
 }
 /**!-------------------------PROJECTS----------------------------!*/
+.projects {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .projects-menu {
     display: flex;
     justify-content: center;
     gap: 24px;
-    padding-top: 96px;
-    padding-bottom: 75px;
+    margin-bottom: 72px;
+
 } 
 .projects-btn {
     background: var(--background-filtr);
@@ -333,7 +346,6 @@ img {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list {
     display: flex;
@@ -352,7 +364,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
-    margin-left: 16px;
+    margin-bottom: 8px;
 }
 .projects-list-text {
     font-weight: 400;
@@ -360,11 +372,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    margin-left: 16px;
+    
 }
 .projects-div {
     padding-top: 32px;
     padding-bottom: 32px;
     border: 1px solid #E7E9FC;
     border-top: none; 
+    padding-left: 16px;
 }
