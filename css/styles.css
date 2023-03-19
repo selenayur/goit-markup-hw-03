@@ -71,10 +71,7 @@ img {
 }
 
 .header-add {
-    display: flex;
-    align-items: center; 
-    margin-right: 156px;
-    margin-left: auto;
+
 }
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -194,7 +191,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-title-color); 
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .advant-text {
     font-weight: 400;
@@ -288,9 +285,6 @@ img {
 }
 .footer-div {
     width: 264px;
-    
-
-
 }
 .footer-text {
     font-weight: 400;
@@ -372,7 +366,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-    
 }
 .projects-div {
     padding-top: 32px;
